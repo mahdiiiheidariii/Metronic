@@ -9,11 +9,12 @@ import { ForwardersSendRequestsComponent } from './forwarders/forwarders-send-re
 import { ForwardersOrderDetailComponent } from './forwarders/forwarders-order-detail/forwarders-order-detail.component';
 import { CustomerPortableMonitorComponent } from './customers/customer-portable-monitor/customer-portable-monitor.component';
 import { CustomerFeedbackComponent } from './customers/customer-feedback/customer-feedback.component';
+import { CreateCustomerFeedbackComponent } from './customers/customer-feedback/create-customer-feedback/create-customer-feedback.component';
 
 @NgModule({
   declarations: [CustomerOrdersComponent,
       MainComponent, ForwardersGetRequestsComponent, ForwardersSendRequestsComponent,
-      CustomerPortableMonitorComponent, CustomerFeedbackComponent, ForwardersOrderDetailComponent],
+      CustomerPortableMonitorComponent, CustomerFeedbackComponent, ForwardersOrderDetailComponent, CreateCustomerFeedbackComponent],
   imports: [
     CommonModule,
     AdminRoutingModule

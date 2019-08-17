@@ -1,3 +1,12 @@
 .page-bar {
     background: transparent;
 }
+
+.label {
+    font-family: Vazir, serif;
+}
+
+.customBtn {
+    background: #32c5d2;
+    color: #fff;
+}
