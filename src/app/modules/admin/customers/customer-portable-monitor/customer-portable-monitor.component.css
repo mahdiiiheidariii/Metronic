@@ -1,0 +1,7 @@
+
+:host {
+    direction: rtl;
+}
+.list-toggle, ul, li, p {
+    text-align: right;
+}

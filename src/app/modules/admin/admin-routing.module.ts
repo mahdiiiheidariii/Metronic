@@ -5,7 +5,8 @@ import {MainComponent} from './layout/main/main.component';
 import {ForwardersGetRequestsComponent} from './forwarders/forwarders-get-requests/forwarders-get-requests.component';
 import {ForwardersSendRequestsComponent} from './forwarders/forwarders-send-requests/forwarders-send-requests.component';
 import {ForwardersOrderDetailComponent} from './forwarders/forwarders-order-detail/forwarders-order-detail.component';
-
+import {CustomerPortableMonitorComponent} from './customers/customer-portable-monitor/customer-portable-monitor.component';
+import {CustomerFeedbackComponent} from './customers/customer-feedback/customer-feedback.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,8 @@ const routes: Routes = [
     {path: 'forwarders-get-requets', component: ForwardersGetRequestsComponent},
     {path: 'forwarders-send-requets', component: ForwardersSendRequestsComponent},
     {path: 'forwarders-order-detail', component: ForwardersOrderDetailComponent},
+    {path: 'monitoring', component: CustomerPortableMonitorComponent},
+    {path: 'customer-feedback', component: CustomerFeedbackComponent},
     // {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
     {path: '**', redirectTo: '/admin'}
 ];
