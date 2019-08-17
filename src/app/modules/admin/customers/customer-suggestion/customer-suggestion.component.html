@@ -1,0 +1,57 @@
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- BEGIN SAMPLE TABLE PORTLET-->
+                <div class="portlet box green">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-cogs"></i>پیشنهادات</div>
+                        <div class="tools">
+                            <a href="javascript:;" class="collapse"> </a>
+                            <!--<a href="#portlet-config" data-toggle="modal" class="config"> </a>-->
+                            <a href="javascript:;" class="reload"> </a>
+                            <!--<a href="javascript:;" class="remove"> </a>-->
+                        </div>
+                    </div>
+                    <div class="portlet-body flip-scroll">
+                        <table class="table table-bordered table-striped table-condensed flip-content" dir="rtl">
+                            <thead class="flip-content">
+                            <tr>
+                                <th> ردیف </th>
+                                <th> عنوان شرکت </th>
+                                <th class="numeric"> قیمت پیشنهادی </th>
+                                <th class="numeric"> میزان حجم پیشنهادی پذیرش </th>
+                                <th class="numeric">سایت </th>
+                                <th class="numeric"> شماره تماس </th>
+                                <th class="numeric">  </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <ng-container *ngFor="let item of items;let i = index;">
+                                <tr>
+                                    <td> {{i}} </td>
+                                    <td> {{item.requestNo}} {{item.id}} </td>
+                                    <td class="numeric"> {{item.requestType}} </td>
+                                    <td class="numeric">{{item.startStation}} </td>
+                                    <td class="numeric"> {{item.endStation}} </td>
+                                    <td class="numeric"> {{item.requestDate}} </td>
+                                    <td class="numeric text-center">
+                                        <button type="button" class="btn btn-primary">تایید درخواست</button>
+                                    </td>
+                                </tr>
+                            </ng-container>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- END SAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
+<!-- END CONTENT -->
