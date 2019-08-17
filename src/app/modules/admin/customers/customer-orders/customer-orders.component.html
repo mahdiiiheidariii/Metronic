@@ -60,13 +60,13 @@
                                                <tr class="rowTable">
                                                    <th> ردیف </th>
                                                    <th> عنوان محموله </th>
-                                                   <th class=""> ابعاد بار</th>
                                                    <th class=""> حجم کل (تن) </th>
-                                                   <th class="">قیمت پیشنهادی </th>
-                                                   <th class=""> حجم قابل پذیرش </th>
+                                                   <th class="">حجم پذیرش شده </th>
                                                    <th class="">  </th>
-                                                   <th class=""> تاریخ درخواست </th>
+                                                   <th class=""> حجم باقیمانده</th>
                                                    <th class="">  </th>
+                                                   <th class=""> تاریخ درخواست</th>
+
                                                </tr>
                                                </thead>
                                                <tbody>
@@ -74,20 +74,19 @@
                                                    <tr class="rowTable">
                                                        <td> {{i}} </td>
                                                        <td> {{item.requestNo}} {{item.id}} </td>
-                                                       <td class=""> {{item.requestType}} </td>
-                                                       <td class="">{{item.startStation}} </td>
+                                                       <td class="">4 </td>
                                                        <td class="">
-                                                           <input type="text" class="proposedPrice">
+                                                           3
                                                        </td>
                                                        <td class="">
-                                                           <input type="text" class="proposedPrice">
+                                                           <button type="button" routerLink="/monitoring" class="submitRequest">رصد بار</button>
                                                        </td>
+                                                       <td class=""> 45 </td>
                                                        <td class="">
-                                                           <button type="button" class="submitRequest">ارسال درخواست</button>
+                                                           <button type="button" class="submitRequest">پیشنهادات</button>
                                                        </td>
-                                                       <td class=""> {{item.requestDate}} </td>
-                                                       <td class="">
-                                                           <button type="button" class="submitRequest">جزئیات</button>
+                                                       <td>
+                                                           {{item.requestDate}}
                                                        </td>
                                                    </tr>
                                                    <!--<tr>-->
@@ -110,294 +109,6 @@
                     </div>
                 </div>
                 <!-- END SAMPLE TABLE PORTLET-->
-                <!--&lt;!&ndash; BEGIN SAMPLE TABLE PORTLET&ndash;&gt;-->
-                <!--<div class="portlet box red">-->
-                    <!--<div class="portlet-title">-->
-                        <!--<div class="caption">-->
-                            <!--<i class="fa fa-cogs"></i>Basic Bootstrap 3.0 Responsive Table </div>-->
-                        <!--<div class="tools">-->
-                            <!--<a href="javascript:;" class="collapse"> </a>-->
-                            <!--<a href="#portlet-config" data-toggle="modal" class="config"> </a>-->
-                            <!--<a href="javascript:;" class="reload"> </a>-->
-                            <!--<a href="javascript:;" class="remove"> </a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="portlet-body">-->
-                        <!--<div class="table-responsive">-->
-                            <!--<table class="table">-->
-                                <!--<thead>-->
-                                <!--<tr>-->
-                                    <!--<th> # </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                <!--</tr>-->
-                                <!--</thead>-->
-                                <!--<tbody>-->
-                                <!--<tr>-->
-                                    <!--<td> 1 </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<td> 2 </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<td> 3 </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                <!--</tr>-->
-                                <!--</tbody>-->
-                            <!--</table>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--&lt;!&ndash; END SAMPLE TABLE PORTLET&ndash;&gt;-->
-                <!--&lt;!&ndash; BEGIN SAMPLE TABLE PORTLET&ndash;&gt;-->
-                <!--<div class="portlet box blue">-->
-                    <!--<div class="portlet-title">-->
-                        <!--<div class="caption">-->
-                            <!--<i class="fa fa-cogs"></i>Bordered Bootstrap 3.0 Responsive Table </div>-->
-                        <!--<div class="tools">-->
-                            <!--<a href="javascript:;" class="collapse"> </a>-->
-                            <!--<a href="#portlet-config" data-toggle="modal" class="config"> </a>-->
-                            <!--<a href="javascript:;" class="reload"> </a>-->
-                            <!--<a href="javascript:;" class="remove"> </a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="portlet-body">-->
-                        <!--<div class="table-responsive">-->
-                            <!--<table class="table table-bordered">-->
-                                <!--<thead>-->
-                                <!--<tr>-->
-                                    <!--<th> # </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                <!--</tr>-->
-                                <!--</thead>-->
-                                <!--<tbody>-->
-                                <!--<tr>-->
-                                    <!--<td> 1 </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<td> 2 </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<td> 3 </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                <!--</tr>-->
-                                <!--</tbody>-->
-                            <!--</table>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--&lt;!&ndash; END SAMPLE TABLE PORTLET&ndash;&gt;-->
-                <!--&lt;!&ndash; BEGIN SAMPLE TABLE PORTLET&ndash;&gt;-->
-                <!--<div class="portlet box yellow">-->
-                    <!--<div class="portlet-title">-->
-                        <!--<div class="caption">-->
-                            <!--<i class="fa fa-cogs"></i>All in One Bootstrap 3.0 Responsive Table </div>-->
-                        <!--<div class="tools">-->
-                            <!--<a href="javascript:;" class="collapse"> </a>-->
-                            <!--<a href="#portlet-config" data-toggle="modal" class="config"> </a>-->
-                            <!--<a href="javascript:;" class="reload"> </a>-->
-                            <!--<a href="javascript:;" class="remove"> </a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="portlet-body">-->
-                        <!--<div class="table-responsive">-->
-                            <!--<table class="table table-striped table-bordered table-hover">-->
-                                <!--<thead>-->
-                                <!--<tr>-->
-                                    <!--<th> # </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                    <!--<th> Table heading </th>-->
-                                <!--</tr>-->
-                                <!--</thead>-->
-                                <!--<tbody>-->
-                                <!--<tr>-->
-                                    <!--<td> 1 </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<td> 2 </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<td> 3 </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                    <!--<td> Table cell </td>-->
-                                <!--</tr>-->
-                                <!--</tbody>-->
-                            <!--</table>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--&lt;!&ndash; END SAMPLE TABLE PORTLET&ndash;&gt;-->
-                <!--&lt;!&ndash; BEGIN SAMPLE TABLE PORTLET&ndash;&gt;-->
-                <!--<div class="portlet box purple">-->
-                    <!--<div class="portlet-title">-->
-                        <!--<div class="caption">-->
-                            <!--<i class="fa fa-cogs"></i>Horizontal Scrollable Responsive Table </div>-->
-                        <!--<div class="tools">-->
-                            <!--<a href="javascript:;" class="collapse"> </a>-->
-                            <!--<a href="#portlet-config" data-toggle="modal" class="config"> </a>-->
-                            <!--<a href="javascript:;" class="reload"> </a>-->
-                            <!--<a href="javascript:;" class="remove"> </a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="portlet-body">-->
-                        <!--<div class="table-scrollable">-->
-                            <!--<table class="table table-striped table-bordered table-hover">-->
-                                <!--<thead>-->
-                                <!--<tr>-->
-                                    <!--<th scope="col" style="width:450px !important"> Column header 1 </th>-->
-                                    <!--<th scope="col"> Column header 2 </th>-->
-                                    <!--<th scope="col"> Column header 3 </th>-->
-                                    <!--<th scope="col"> Column header 4 </th>-->
-                                    <!--<th scope="col"> Column header 5 </th>-->
-                                    <!--<th scope="col"> Column header 6 </th>-->
-                                    <!--<th scope="col"> Column header 7 </th>-->
-                                    <!--<th scope="col"> Column header 8 </th>-->
-                                    <!--<th scope="col"> Column header 9 </th>-->
-                                    <!--<th scope="col"> Column header 10 </th>-->
-                                <!--</tr>-->
-                                <!--</thead>-->
-                                <!--<tbody>-->
-                                <!--<tr>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                    <!--<td> Table data </td>-->
-                                <!--</tr>-->
-                                <!--</tbody>-->
-                            <!--</table>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--&lt;!&ndash; END SAMPLE TABLE PORTLET&ndash;&gt;-->
             </div>
         </div>
     </div>

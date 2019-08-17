@@ -5,6 +5,8 @@ import {MainComponent} from './layout/main/main.component';
 import {DetailsComponent} from './details/details.component';
 import {ForwardersGetRequestsComponent} from './forwarders/forwarders-get-requests/forwarders-get-requests.component';
 import {ForwardersSendRequestsComponent} from './forwarders/forwarders-send-requests/forwarders-send-requests.component';
+import {CustomerPortableMonitorComponent} from './customers/customer-portable-monitor/customer-portable-monitor.component';
+import {CustomerFeedbackComponent} from './customers/customer-feedback/customer-feedback.component';
 
 
 const routes: Routes = [
@@ -12,6 +14,8 @@ const routes: Routes = [
     {path: 'customer-orders', component: CustomerOrdersComponent},
     {path: 'forwarders-get-requets', component: ForwardersGetRequestsComponent},
     {path: 'forwarders-send-requets', component: ForwardersSendRequestsComponent},
+    {path: 'monitoring', component: CustomerPortableMonitorComponent},
+    {path: 'customer-feedback', component: CustomerFeedbackComponent},
     {path: 'details', component: DetailsComponent},
     // {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
     {path: '**', redirectTo: '/admin'}
