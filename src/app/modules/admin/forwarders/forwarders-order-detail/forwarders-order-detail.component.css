@@ -1,0 +1,46 @@
+.detailsPageContainer{
+    direction: rtl;
+    font-size: .9em;
+    font-family: Vazir;
+}
+.productName{
+    display: flex;
+    justify-content: space-between;
+}
+.marginB15{
+    margin-bottom: 15px;
+}
+.marginR10{
+    margin-right: 10px;
+}
+.marginB5{
+    margin-bottom: 5px;
+}
+.imageBoxF{
+    text-align: center;
+}
+.imageBoxF >img{
+    max-width: 50%;
+    max-height: 200px;
+
+}
+.buttonBox{
+    text-align: left;
+    /*direction: ltr;*/
+    padding-left: 15px;
+
+}
+.forwarderButton{
+    height: 30px;
+    font-size: .8em;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100px;
+    background-color: #009de8;
+    color: #fff;
+    border: none !important;
+    border-radius: 4px;
+    box-shadow: 0 1px 13px -7px rgba(0, 0, 0, 0.3);
+}
