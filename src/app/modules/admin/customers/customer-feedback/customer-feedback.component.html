@@ -6,10 +6,9 @@
         <div class="page-bar">
             <div class="page-toolbar">
                 <div class="btn-group pull-right">
-                    <button type="button" class="btn btn-fit-height grey-salt dropdown-toggle"
-                            data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+                    <button type="button" class="btn btn-fit-height customBtn" routerLink="/create-customer-feedback">
                         ثبت بازخورد
-                        <i class="fa fa-angle-down"></i>
+                        <!--<i class="fa fa-angle-down"></i>-->
                     </button>
                 </div>
             </div>
@@ -52,7 +51,14 @@
                                     <td class="numeric">{{item.startStation}} </td>
                                     <td class="numeric"> {{item.endStation}} </td>
                                     <td class="numeric"> {{item.requestDate}} </td>
-                                    <td class="numeric"> {{item.requestDate}} </td>
+                                    <td class="numeric text-center">
+                                        <span class="label label-default" *ngIf="item.status === 0"> پیش فرض </span>
+                                        <span class="label label-primary" *ngIf="item.status === 1"> پاسخ داده شده </span>
+                                        <span class="label label-info" *ngIf="item.status === 2"> اوکی </span>
+                                        <span class="label label-success" *ngIf="item.status === 3"> ارسال شده </span>
+                                        <span class="label label-danger" *ngIf="item.status === 4"> رد شده </span>
+                                        <span class="label label-warning" *ngIf="item.status === 5"> در حال بررسی </span>
+                                    </td>
                                 </tr>
                             </ng-container>
                             </tbody>
