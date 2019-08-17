@@ -10,11 +10,12 @@ import { ForwardersOrderDetailComponent } from './forwarders/forwarders-order-de
 import { CustomerPortableMonitorComponent } from './customers/customer-portable-monitor/customer-portable-monitor.component';
 import { CustomerFeedbackComponent } from './customers/customer-feedback/customer-feedback.component';
 import { CreateCustomerFeedbackComponent } from './customers/customer-feedback/create-customer-feedback/create-customer-feedback.component';
+import { RaiGetRequestsComponent } from './rai/rai-get-requests/rai-get-requests.component';
 
 @NgModule({
   declarations: [CustomerOrdersComponent,
       MainComponent, ForwardersGetRequestsComponent, ForwardersSendRequestsComponent,
-      CustomerPortableMonitorComponent, CustomerFeedbackComponent, ForwardersOrderDetailComponent, CreateCustomerFeedbackComponent],
+      CustomerPortableMonitorComponent, CustomerFeedbackComponent, ForwardersOrderDetailComponent, CreateCustomerFeedbackComponent, RaiGetRequestsComponent],
   imports: [
     CommonModule,
     AdminRoutingModule

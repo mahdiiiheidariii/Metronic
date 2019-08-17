@@ -8,6 +8,7 @@ import {ForwardersOrderDetailComponent} from './forwarders/forwarders-order-deta
 import {CustomerPortableMonitorComponent} from './customers/customer-portable-monitor/customer-portable-monitor.component';
 import {CustomerFeedbackComponent} from './customers/customer-feedback/customer-feedback.component';
 import {CreateCustomerFeedbackComponent} from './customers/customer-feedback/create-customer-feedback/create-customer-feedback.component';
+import {RaiGetRequestsComponent} from './rai/rai-get-requests/rai-get-requests.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
     {path: 'monitoring', component: CustomerPortableMonitorComponent},
     {path: 'customer-feedback', component: CustomerFeedbackComponent},
     {path: 'create-customer-feedback', component: CreateCustomerFeedbackComponent},
+    {path: 'rai-get-requets', component: RaiGetRequestsComponent},
     // {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
     {path: '**', redirectTo: '/admin'}
 ];
