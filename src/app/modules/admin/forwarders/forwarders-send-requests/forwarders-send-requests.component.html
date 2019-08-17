@@ -1,1 +1,68 @@
-<p>forwarders-send-requests works!</p>
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <div class="page-bar">
+            <div class="page-toolbar">
+                <div class="btn-group pull-right">
+                    <button type="button" class="btn btn-fit-height grey-salt dropdown-toggle"
+                            data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+                        ثبت درخواست جدید
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- BEGIN SAMPLE TABLE PORTLET-->
+                <div class="portlet box green">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-cogs"></i>بازخوردها</div>
+                        <div class="tools">
+                            <a href="javascript:;" class="collapse"> </a>
+                            <!--<a href="#portlet-config" data-toggle="modal" class="config"> </a>-->
+                            <a href="javascript:;" class="reload"> </a>
+                            <!--<a href="javascript:;" class="remove"> </a>-->
+                        </div>
+                    </div>
+                    <div class="portlet-body flip-scroll">
+                        <table class="table table-bordered table-striped table-condensed flip-content" dir="rtl">
+                            <thead class="flip-content">
+                            <tr>
+                                <th width="20%"> ردیف </th>
+                                <th> عنوان درخواست </th>
+                                <th class="numeric"> نوع واگن</th>
+                                <th class="numeric">مبدا </th>
+                                <th class="numeric">مقصد </th>
+                                <th class="numeric"> تاریخ درخواست </th>
+                                <th class="numeric"> وضعیت درخواست </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <ng-container *ngFor="let item of items;let i = index;">
+                                <tr>
+                                    <td> {{i}} </td>
+                                    <td> {{item.requestNo}} {{item.id}} </td>
+                                    <td class="numeric"> {{item.requestType}} </td>
+                                    <td class="numeric">{{item.startStation}} </td>
+                                    <td class="numeric"> {{item.endStation}} </td>
+                                    <td class="numeric"> {{item.requestDate}} </td>
+                                    <td class="numeric"> {{item.requestDate}} </td>
+                                </tr>
+                            </ng-container>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- END SAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
+<!-- END CONTENT -->
