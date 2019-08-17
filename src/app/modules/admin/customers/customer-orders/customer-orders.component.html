@@ -44,7 +44,7 @@
                             </thead>
                             <tbody>
                            <ng-container *ngFor="let item of items;let i = index;">
-                               <tr class="accordion-toggle" (click)="activeIndex = i">
+                               <tr class="accordion-toggle" (click)="toggleRow(i)">
                                    <td> {{i}} </td>
                                    <td> {{item.requestNo}} {{item.id}} </td>
                                    <td class="numeric"> {{item.requestType}} </td>
@@ -404,12 +404,3 @@
     <!-- END CONTENT BODY -->
 </div>
 <!-- END CONTENT -->
-
-<!--<script>-->
-    <!--$('.accordian-body').on('show.bs.collapse', function () {-->
-        <!--$(this).closest("table")-->
-            <!--.find(".collapse.in")-->
-            <!--.not(this)-->
-            <!--.collapse('toggle')-->
-    <!--})-->
-<!--</script>-->

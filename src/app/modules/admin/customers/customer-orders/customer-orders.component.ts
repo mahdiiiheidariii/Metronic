@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ifStmt} from '@angular/compiler/src/output/output_ast';
 
 @Component({
     selector: 'app-customer-orders',
@@ -25,6 +26,14 @@ export class CustomerOrdersComponent implements OnInit {
     }
 
     ngOnInit() {
+    }
+
+    toggleRow(i) {
+        if (this.activeIndex === i) {
+            this.activeIndex = null;
+        } else {
+            this.activeIndex = i;
+        }
     }
 
 }
