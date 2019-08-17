@@ -10,3 +10,17 @@
     background: #32c5d2;
     color: #fff;
 }
+.submitRequest{
+    height: 30px;
+    font-size: .8em;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100px;
+    background-color: #009de8;
+    color: #fff;
+    border: none !important;
+    border-radius: 4px;
+    box-shadow: 0 1px 13px -7px rgba(0, 0, 0, 0.3);
+}

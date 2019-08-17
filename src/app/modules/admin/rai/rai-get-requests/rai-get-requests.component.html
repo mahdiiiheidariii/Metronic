@@ -6,10 +6,7 @@
         <div class="page-bar">
             <div class="page-toolbar">
                 <div class="btn-group pull-right">
-                    <button type="button" class="btn btn-fit-height customBtn" routerLink="/create-customer-feedback">
-                        ثبت بازخورد
-                        <!--<i class="fa fa-angle-down"></i>-->
-                    </button>
+
                 </div>
             </div>
         </div>
@@ -34,12 +31,13 @@
                             <thead class="flip-content">
                             <tr>
                                 <th> ردیف </th>
-                                <th> عنوان بازخورد </th>
-                                <th class="numeric"> دپارتمان مرتبط</th>
-                                <th class="numeric"> درخواست مرتبط </th>
-                                <th class="numeric">دسته بندی پیام </th>
-                                <th class="numeric"> تاریخ ثبت </th>
-                                <th class="numeric"> وضعیت </th>
+                                <th> عنوان درخواست کننده </th>
+                                <th class="numeric"> شرکت حمل و نقل / فورواردر</th>
+                                <th class="numeric">نوع درخواست</th>
+                                <th class="numeric">مبدا </th>
+                                <th class="numeric"> مقصد </th>
+                                <th class="numeric"> تاریخ درخواست </th>
+                                <th class="numeric">  </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -51,13 +49,9 @@
                                     <td class="numeric">{{item.startStation}} </td>
                                     <td class="numeric"> {{item.endStation}} </td>
                                     <td class="numeric"> {{item.requestDate}} </td>
+                                    <td class="numeric"> {{item.requestDate}} </td>
                                     <td class="numeric text-center">
-                                        <span class="label label-default" *ngIf="item.status === 0"> پیش فرض </span>
-                                        <span class="label label-primary" *ngIf="item.status === 1"> پاسخ داده شده </span>
-                                        <span class="label label-info" *ngIf="item.status === 2"> اوکی </span>
-                                        <span class="label label-success" *ngIf="item.status === 3"> ارسال شده </span>
-                                        <span class="label label-danger" *ngIf="item.status === 4"> رد شده </span>
-                                        <span class="label label-warning" *ngIf="item.status === 5"> در حال بررسی </span>
+                                        <button type="button" class="submitRequest" routerLink="">جزئیات</button>
                                     </td>
                                 </tr>
                             </ng-container>
