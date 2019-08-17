@@ -67,3 +67,8 @@
 .rowTable > td, .rowTable > th{
     text-align: center;
 }
+
+.customBtn {
+    background: #32c5d2;
+    color: #fff;
+}
