@@ -9,7 +9,6 @@ import { HeaderComponent } from './modules/admin/layout/header/header.component'
 import { MainComponent } from './modules/admin/layout/main/main.component';
 import { SideBarComponent } from './modules/admin/layout/side-bar/side-bar.component';
 import {AdminModule} from './modules/admin/admin.module';
-import { DetailsComponent } from './modules/admin/details/details.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { DetailsComponent } from './modules/admin/details/details.component';
     AdminComponent,
     FooterComponent,
     HeaderComponent,
-    SideBarComponent,
-    DetailsComponent
+    SideBarComponent
   ],
   imports: [
     BrowserModule,
