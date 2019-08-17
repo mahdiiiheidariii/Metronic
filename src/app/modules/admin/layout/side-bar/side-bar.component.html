@@ -12,14 +12,11 @@
         <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
         <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
         <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
-            <!--<li class="nav-item start"  routerLink="/admin" [routerLinkActive]="'active open'" >-->
-                <!--<a href="javascript:;" class="nav-link nav-toggle">-->
-                    <!--<i class="icon-home"></i>-->
-                    <!--<span class="title">لیست درخواست ها</span>-->
-                    <!--<span class="selected"></span>-->
-                    <!--<span class="arrow open"></span>-->
-                <!--</a>-->
-            <!--</li>-->
+            <li class="nav-item">
+                <a style="padding: 0;margin: 0;height: auto;min-height: auto;" disabled>
+                    <span class="title">customer</span>
+                </a>
+            </li>
             <li class="nav-item start" routerLink="/customer-orders" [routerLinkActive]="'active open'">
                 <a class="nav-link ">
                     <i class="icon-bulb"></i>
@@ -38,6 +35,13 @@
                     <!--<span class="badge badge-success">1</span>-->
                 </a>
             </li>
+
+
+            <li class="nav-item">
+                <a style="padding: 0;margin: 0;height: auto;min-height: auto;" disabled>
+                    <span class="title">forwarder</span>
+                </a>
+            </li>
             <li class="nav-item start" routerLink="/forwarders-get-requets" [routerLinkActive]="'active open'">
                 <a class="nav-link ">
                     <i class="icon-bulb"></i>
@@ -54,6 +58,13 @@
                     <span class="selected"></span>
                     <span class="arrow open"></span>
                     <!--<span class="badge badge-success">1</span>-->
+                </a>
+            </li>
+
+
+            <li class="nav-item">
+                <a style="padding: 0;margin: 0;height: auto;min-height: auto;" disabled>
+                    <span class="title">rai</span>
                 </a>
             </li>
         </ul>

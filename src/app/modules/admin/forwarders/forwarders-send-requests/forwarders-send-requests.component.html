@@ -6,10 +6,8 @@
         <div class="page-bar">
             <div class="page-toolbar">
                 <div class="btn-group pull-right">
-                    <button type="button" class="btn btn-fit-height customBtn"
-                            data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+                    <button type="button" class="btn btn-fit-height customBtn">
                         ثبت درخواست جدید
-                        <i class="fa fa-angle-down"></i>
                     </button>
                 </div>
             </div>
@@ -34,7 +32,7 @@
                         <table class="table table-bordered table-striped table-condensed flip-content" dir="rtl">
                             <thead class="flip-content">
                             <tr>
-                                <th width="20%"> ردیف </th>
+                                <th> ردیف </th>
                                 <th> عنوان درخواست </th>
                                 <th class="numeric"> نوع واگن</th>
                                 <th class="numeric">مبدا </th>
@@ -52,7 +50,7 @@
                                     <td class="numeric">{{item.startStation}} </td>
                                     <td class="numeric"> {{item.endStation}} </td>
                                     <td class="numeric"> {{item.requestDate}} </td>
-                                    <td class="numeric">
+                                    <td class="numeric text-center">
                                         <span class="label label-default" *ngIf="item.status === 0"> پیش فرض </span>
                                         <span class="label label-primary" *ngIf="item.status === 1"> پاسخ داده شده </span>
                                         <span class="label label-info" *ngIf="item.status === 2"> اوکی </span>
