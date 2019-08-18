@@ -9,6 +9,7 @@ import { HeaderComponent } from './modules/admin/layout/header/header.component'
 import { MainComponent } from './modules/admin/layout/main/main.component';
 import { SideBarComponent } from './modules/admin/layout/side-bar/side-bar.component';
 import {AdminModule} from './modules/admin/admin.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {AdminModule} from './modules/admin/admin.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-      AdminModule
+      AdminModule,
+      BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

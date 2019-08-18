@@ -10,6 +10,7 @@ import {CustomerFeedbackComponent} from './customers/customer-feedback/customer-
 import {CreateCustomerFeedbackComponent} from './customers/customer-feedback/create-customer-feedback/create-customer-feedback.component';
 import {RaiGetRequestsComponent} from './rai/rai-get-requests/rai-get-requests.component';
 import {CustomerSuggestionComponent} from './customers/customer-suggestion/customer-suggestion.component';
+import {RaiOrderDetailsComponent} from './rai/rai-order-details/rai-order-details.component';
 
 const routes: Routes = [
     {path: 'admin', component: MainComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
     {path: 'create-customer-feedback', component: CreateCustomerFeedbackComponent},
     {path: 'rai-get-requets', component: RaiGetRequestsComponent},
     {path: 'customer-suggestion', component: CustomerSuggestionComponent},
+    {path: 'rai-order-details', component: RaiOrderDetailsComponent},
     // {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
     {path: '**', redirectTo: '/admin'}
 ];

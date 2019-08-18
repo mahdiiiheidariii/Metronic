@@ -2,3 +2,6 @@
 p, h1, h2, h3, h4, h5, h6, input, select, option, span, div, a {
     font-family: Vazir, serif;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

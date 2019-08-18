@@ -12,12 +12,13 @@ import { CustomerFeedbackComponent } from './customers/customer-feedback/custome
 import { CreateCustomerFeedbackComponent } from './customers/customer-feedback/create-customer-feedback/create-customer-feedback.component';
 import { RaiGetRequestsComponent } from './rai/rai-get-requests/rai-get-requests.component';
 import { CustomerSuggestionComponent } from './customers/customer-suggestion/customer-suggestion.component';
+import { RaiOrderDetailsComponent } from './rai/rai-order-details/rai-order-details.component';
 
 @NgModule({
   declarations: [CustomerOrdersComponent,
       MainComponent, ForwardersGetRequestsComponent, ForwardersSendRequestsComponent,
       CustomerPortableMonitorComponent, CustomerFeedbackComponent, ForwardersOrderDetailComponent,
-      CreateCustomerFeedbackComponent, RaiGetRequestsComponent, CustomerSuggestionComponent],
+      CreateCustomerFeedbackComponent, RaiGetRequestsComponent, CustomerSuggestionComponent, RaiOrderDetailsComponent],
 
   imports: [
     CommonModule,
